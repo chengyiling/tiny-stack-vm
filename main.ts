@@ -1,3 +1,4 @@
+// exact ISA
 import{mkdirSync as mk,readdirSync as rd,readFileSync as rf,writeFileSync as wf}from"node:fs";import{join as j}from"node:path";
 function run(p,i){const d=new Int32Array(256),c=new Int32Array(64),m=new Int32Array(256),o=Buffer.alloc(65536);let sp=0,cp=0,ip=0,pc=0,st=0,ol=0;
 const e=n=>({out:o.subarray(0,ol),exit:n});for(;;){if(st===1e6)return e(10);if(pc<0||pc>=p.length)return e(9);const op=p[pc];let im=0,po=0,pu=0;switch(op){
